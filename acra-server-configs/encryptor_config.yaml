@@ -1,0 +1,27 @@
+defaults:
+  crypto_envelope: acrablock
+
+schemas:
+  - table: Users
+    columns:
+      - id
+      - firstName
+      - lastName
+      - patronymic
+      - birthDate
+      - role
+      - phone
+      - email
+      - password
+      - position
+      - departmentId
+      - photoId
+      - deletedAt
+    encrypted:
+      - column: phone
+        data_type: str
+        searchable: true
+      - column: email
+        data_type: str
+        searchable: true
+
