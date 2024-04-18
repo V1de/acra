@@ -1,0 +1,13 @@
+name: "idx"
+fs:
+  indexed_chars: 100%
+  continue_on_error: true
+  update_rate: "1m"
+  ocr:
+    enabled: false
+elasticsearch:
+  nodes:
+    - url: "http://elasticsearch:9200"
+  username: "elastic"
+  password: "changeme"
+  ssl_verification: false
